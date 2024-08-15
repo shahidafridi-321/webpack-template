@@ -9,10 +9,9 @@ module.exports = {
     clean: true,
   },
   mode: 'development',
-  devtool: 'inline-source-map',
+  devtool: 'eval-source-map',
   devServer: {
-    static: './dist',
-    open: true,
+    watchFiles: [".src/index.html"],
   },
   module: {
     rules: [
